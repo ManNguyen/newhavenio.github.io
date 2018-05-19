@@ -47,7 +47,8 @@ module.exports = {
             },
             {
               loader: "sass-loader"
-            }
+            },
+            'postcss-loader'
           ],
           fallback: "style-loader"
         })
