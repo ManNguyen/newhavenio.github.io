@@ -4,17 +4,13 @@
   {% include head.html %}
 
   <body>
-
     {% include header.html %}
 
-    <div class="wrapper">
-      <div class="page-content {% if page.container == true %}container-fluid{% endif %}">
-        {{ content }}
-      </div>
-    </div>
+    <main>
+      {{ content }}
+    </main>
 
     {% include footer.html %}
-
   </body>
 
 </html>
