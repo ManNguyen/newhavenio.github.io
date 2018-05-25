@@ -43,12 +43,15 @@ module.exports = {
               loader: "css-loader",
               options: {
                 minimize: true,
+                importLoaders: 1
               }
             },
             {
-              loader: "sass-loader"
+              loader: "postcss-loader"
             },
-            'postcss-loader'
+            {
+              loader: "sass-loader"
+            }
           ],
           fallback: "style-loader"
         })
