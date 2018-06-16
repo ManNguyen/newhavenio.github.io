@@ -56,23 +56,11 @@ let colors = {
   'orange-light': '#FF8A34',
   'orange-lighter': '#FFF5EB',
 
-  'yellow-darker': '#775800',
-  'yellow-dark': '#BE8B00',
-  'yellow': '#FFBB00',
-  'yellow-light': '#FFC934',
-  'yellow-lighter': '#FFDC7A',
-
   'teal-darker': '#004A42',
   'teal-dark': '#007669',
   'teal': '#00A795',
   'teal-light': '#26BAAA',
-  'teal-lighter': '#E8FFFE',
-
-  'blue-darker': '#050A53',
-  'blue-dark': '#0C1583',
-  'blue': '#131FB7',
-  'blue-light': '#3E48C7',
-  'blue-lighter': '#777ED7'
+  'teal-lighter': '#E8FFFE'
 }
 
 module.exports = {
@@ -195,15 +183,11 @@ module.exports = {
   */
 
   textSizes: {
-    'xs': '.75rem',     // 12px
     'sm': '.875rem',    // 14px
     'base': '1.2rem',     // 16px
     'lg': '1.325rem',   // 18px
     'xl': '1.45rem',    // 20px
-    '2xl': '1.6rem',    // 24px
-    '3xl': '2.075rem',  // 30px
-    '4xl': '2.45rem',   // 36px
-    '5xl': '3.2rem',      // 48px
+    '2xl': '1.6rem'    // 24px
   },
 
 
@@ -222,15 +206,10 @@ module.exports = {
   */
 
   fontWeights: {
-    'hairline': 100,
-    'thin': 200,
     'light': 300,
     'normal': 400,
-    'medium': 500,
     'semibold': 600,
-    'bold': 700,
-    'extrabold': 800,
-    'black': 900,
+    'bold': 700
   },
 
 
