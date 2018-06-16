@@ -54,7 +54,7 @@ let colors = {
   'orange-dark': '#BE5000',
   'orange': '#FF7B1A',
   'orange-light': '#FF8A34',
-  'orange-lighter': '#FFB27A',
+  'orange-lighter': '#FFF5EB',
 
   'yellow-darker': '#775800',
   'yellow-dark': '#BE8B00',
@@ -66,13 +66,13 @@ let colors = {
   'teal-dark': '#007669',
   'teal': '#00A795',
   'teal-light': '#26BAAA',
-  'teal-lighter': '#63CEC2',
+  'teal-lighter': '#E8FFFE',
 
   'blue-darker': '#050A53',
   'blue-dark': '#0C1583',
   'blue': '#131FB7',
   'blue-light': '#3E48C7',
-  'blue-lighter': '#777ED7',
+  'blue-lighter': '#777ED7'
 }
 
 module.exports = {
