@@ -1,1 +1,24 @@
-<footer></footer>
+<footer class="mt-auto bg-teal-darker text-grey-lighter shadow-lg">
+  <div class="nh-o-maxWidth flex flex-col md:flex-row">
+    <p class="md:w-2/3 pb-4 text-teal-lighter leading-normal">
+      {{ site.description }}
+    </p>
+
+    <ul class="list-reset md:ml-auto">
+      {% for menu in site.data.menu %}
+        {% if page.url == menu.link %}
+          {% assign link = '#main' %}
+          {% assign active_classes = 'font-semibold' %}
+        {% else %}
+          {% assign link = menu.link | prepend: site.baseurl %}
+          {% assign active_classes = 'text-sm' %}
+        {% endif %}
+        <li>
+          <a class="inline-block pb-2 text-teal-lighter {{ active_classes }}" href="{{ link }}">
+            {{ menu.name }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</footer>

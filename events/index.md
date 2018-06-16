@@ -2,7 +2,6 @@
 layout: page
 title: Events
 
-container: true
 meetup_events: true
 ---
 

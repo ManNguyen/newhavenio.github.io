@@ -1,8 +1,6 @@
 ---
 layout: page
 title: Contact
-
-container: true
 ---
 
 Nulla nisi magna reprehenderit cillum sint do. Irure do aliquip reprehenderit ullamco duis esse aliquip. Elit pariatur anim dolor aute velit nisi cillum qui nisi esse et enim non ullamco. Qui sint dolor nisi minim amet deserunt consequat. Consequat dolore consequat incididunt ad sunt enim dolore sint proident aliquip mollit sit non magna. Labore nulla fugiat ex ipsum non. Eu eu minim proident ut incididunt veniam anim ut.

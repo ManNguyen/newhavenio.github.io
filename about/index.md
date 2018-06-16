@@ -1,8 +1,6 @@
 ---
 layout: page
 title: About
-
-container: true
 ---
 
 You may be peripherally aware of NewHaven.io but not really understand what the group is or why it exists. In a nutshell, we're a nonprofit organization that serves the local tech community. But what does that actually _mean?_
