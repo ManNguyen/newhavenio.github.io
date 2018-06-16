@@ -20,9 +20,14 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.21/webcomponents-lite.min.js"></script>
-  <script type="text/javascript" src="{{ '/js/bundle.js' | prepend: site.baseurl }}" charset="utf8" ></script>
-  <script src="{{ "/js/components/meetup-utils.js" | prepend: site.baseurl }}"></script>
+
+  {% if page.meetup_events %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.21/webcomponents-lite.min.js"></script>
+    <script type="text/javascript" src="{{ '/js/bundle.js' | prepend: site.baseurl }}" charset="utf8" ></script>
+    <script src="{{ "/js/components/meetup-utils.js" | prepend: site.baseurl }}"></script>
+    <link rel="import" href="{{ "/js/components/meetup-events.html" | prepend: site.baseurl }}">
+    <link rel="import" href="{{ "/js/components/meetup-event-card.html" | prepend: site.baseurl }}">
+  {% endif %}
 
   {% if jekyll.environment == 'production' %}
     {% include analytics.html %}
