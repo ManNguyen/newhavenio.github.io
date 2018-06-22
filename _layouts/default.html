@@ -14,13 +14,5 @@
     </main>
 
     {% include footer.html %}
-
-    {% if page.meetup_events %}
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.21/webcomponents-lite.min.js"></script>
-      <script type="text/javascript" src="{{ '/js/bundle.js' | prepend: site.baseurl }}" charset="utf8" ></script>
-      <script src="{{ "/js/components/meetup-utils.js" | prepend: site.baseurl }}"></script>
-      <link rel="import" href="{{ "/js/components/meetup-events.html" | prepend: site.baseurl }}">
-      <link rel="import" href="{{ "/js/components/meetup-event-card.html" | prepend: site.baseurl }}">
-    {% endif %}
   </body>
 </html>
