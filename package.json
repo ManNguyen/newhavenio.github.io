@@ -16,6 +16,7 @@
     "@fullhuman/postcss-purgecss": "^1.0.1",
     "jquery": "3.2.1",
     "mustache": "^2.3.0",
+    "pa11y-ci": "^2.1.1",
     "postcss": "^6.0.22",
     "postcss-loader": "^2.1.5",
     "turbolinks": "^5.1.1"
@@ -42,6 +43,8 @@
     "start": "concurrently -n jekyll,webpack \"yarn run jekyll-server\" \"yarn run webpack-watch\"",
     "jekyll-server": "jekyll serve --incremental --watch",
     "webpack-watch": "webpack -w",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "test-pa11y": "./node_modules/.bin/pa11y-ci",
+    "test-pa11y-travis": "yarn run jekyll-server & sleep 10; yarn run test-pa11y; kill $(ps aux | grep 'jekyll' | awk '{print $2}')"
   }
 }

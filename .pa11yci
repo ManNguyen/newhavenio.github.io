@@ -1,0 +1,15 @@
+{
+  "allowedStandards": "WCAG2AA",
+  "level": "error",
+  "chromeLaunchConfig": {
+      "args": [
+          "--no-sandbox",
+          "--disable-setuid-sandbox"
+      ]
+  },
+  "defaults": {},
+  "urls": [
+    "localhost:4000/",
+    "localhost:4000/about/"
+  ]
+}
